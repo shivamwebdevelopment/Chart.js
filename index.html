@@ -26,7 +26,9 @@
       Chart.defaults.global.defaultFontColor = "#333";
 
       let massPopChart = new Chart(myChart, {
+           // A - TYPE 
         type: "bar", //bar,horizontalBar,Pie,line,doughnut, radar,polarArea
+           // B - DATA (LABELS, DATASETS)           
         data: {
           // 1. Labels
           labels: ["Boston", "London", "America", "India", "Australia"],
@@ -49,7 +51,7 @@
             }
           ]
         },
-        // 3. Option- title, legend(labels), layout,tooltips
+        // 3. OPTIONS (TITLE, LEGEND, LAYOUT, TOOLTIPS)
         options: {
           title: {
             display: true,
